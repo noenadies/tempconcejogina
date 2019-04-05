@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!--inicia   style  crud-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInputcrudcrud {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTablecrudcrud {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTablecrudcrud th, #myTablecrudcrud td {
+
+}
+
+#myTablecrudcrud tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTablecrudcrud tr.headercrudcrud, #myTablecrudcrud tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+.cltd{
+  text-align: left;
+  padding: 0px;
+  width:12.500000000000000%;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+  border: 1px dashed rgba(28,110,164,0.67);
+}
+
+#idmenulateralcrudcrud{
+
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 40%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.9;
+}
+#ididbtmenulateralcrudcrud{
+  position: absolute;
+  top: 0%;
+  left: 90%;
+  width:90px;
+  height: 33px;
+  background-color: rgb(0, 0, 0);
+ 
+color: #ffffff;
+}
+
+
+
+.myButtonmenulatcrudcrud {
+  -moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+  -webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+  box-shadow:inset 0px -3px 7px 0px #29bbff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+  background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+  background-color:#2dabf9;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  border:1px solid #0b0e07;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  padding:9px 23px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #263666;
+}
+.myButtonmenulatcrudcrud:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+  background:-moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+  background:-webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+  background:-o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+  background:-ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+  background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#2dabf9',GradientType=0);
+  background-color:#0688fa;
+}
+.myButtonmenulatcrudcrud:active {
+  position:relative;
+  top:1px;
+}
+
+
+
+
+
+#idbtliderlcrudcrud{
+
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  width: 90%;
+}
+
+
+#idbtdireccioncrudcrud{
+  position: absolute;
+  top: 11%;
+  left: 5%;
+  width: 90%;
+}
+
+#idbtdireccioncrudcrud{
+  position: absolute;
+  top: 11%;
+  left: 5%;
+  width: 90%;
+}
+
+
+#idbtTelefonocrudcrud{
+  position: absolute;
+  top: 19%;
+  left: 5%;
+  width: 90%;
+}
+
+
+#idbcedulacrudcrud{
+  position: absolute;
+  top: 27%;
+  left: 5%;
+  width: 90%;
+}
+
+
+#idbmesacrudcrud{
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  width: 90%;
+}
+
+
+#idbnombrcrudcrud{
+  position: absolute;
+  top: 43%;
+  left: 5%;
+  width: 90%;
+
+}
+
+
+
+
+#idbtelelidercrudcrud{
+  position: absolute;
+  top: 51%;
+  left: 5%;
+  width: 90%;
+
+}
+#idbpuestcrudcrud{
+  position: absolute;
+  top: 59%;
+  left: 5%;
+  width: 90%;
+
+}
+#idh2crudcrud{
+
+  font-family: "Playfair Display SC", serif;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(0, 180, 230);
+    background-color: rgb(84, 84, 84);
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+
+
+
+
+#idcrud1crudcrud{
+
+position: absolute;
+top: 0%;
+left: 0%;
+width: 25%;
+height: 100%;
+background-color: #0b0e07;
+opacity: 0.9;
+overflow-y: scroll;
+}
+
+
+#idcrud2{
+
+position: absolute;
+top: 0%;
+left: 25%;
+width: 25%;
+height: 100%;
+background-color: #0b0e07;
+opacity: 0.9;
+overflow-y: scroll;
+}
+
+#idpaneleditarpcrudcrud{
+
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #0b0e07;
+  opacity: 0.9;
+z-index: 210;
+}
+
+#idbtcerraraneleditorcrudcrud{
+
+position: absolute;
+top: 3%;
+left: 90%;
+width: 70px;
+height: 40px;
+
+
+}
+
+#idbtactaulizaraneleditorcrudcrud{
+
+  position: absolute;
+  top: 8%;
+  left: 90%;
+  width: 70px;
+  height: 40px;
+  
+  
+  }
+
+
+
+
+#idbtopenaneleditorcrudcrud{
+
+
+
+position: absolute;
+top: 7%;
+left: 90%;
+width:90px;
+height: 33px;
+background-color: rgb(0, 0, 0);
+
+color: #ffffff;
+
+
+
+
+
+}
+
+#idmodalmenueditarcrudcrud{
+
+
+  position: absolute;
+  top:0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #0b0e07;
+  z-index: 32;
+}
+
+.myButtonbteditcrudcrud {
+  -moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+  -webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+  box-shadow:inset 0px -3px 7px 0px #29bbff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+  background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+  background-color:#2dabf9;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  border:1px solid #0b0e07;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  padding:9px 23px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #263666;
+}
+.myButtonbteditcrudcrud:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+  background:-moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+  background:-webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+  background:-o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+  background:-ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+  background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#2dabf9',GradientType=0);
+  background-color:#0688fa;
+}
+.myButtonbteditcrudcrud:active {
+  position:relative;
+  top:1px;
+}
+
+#idbtedisicrudcrud
+
+{
+  position: absolute;
+  top:60%;
+  left: 30%;
+
+
+
+
+
+}
+#idmenueditarpcrudcrud{
+  position: absolute;
+  top:3%;
+  left: 30%;
+  color: #2dabf9;
+  font-size: 20px;
+  text-align: center;
+
+  
+}
+
+#idbtcerrarsicrudcrud{
+  position: absolute;
+  top:60%;
+  left: 60%;
+
+
+  
+}
+
+
+#idbteliminarcrudcrud{
+  position: absolute;
+  top:60%;
+  left: 45%;
+
+}
+
+
+#idnotascrudcrud{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+z-index:  70;
+}
+
+
+
+
+#myInputcrudcrudnotascrudcrud {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTablecrudcrudnotascrudcrud {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+
+  overflow: scroll;
+}
+
+#myTablecrudcrudnotascrudcrud th, #myTablecrudcrudnotascrudcrud td {
+
+}
+
+#myTablecrudcrudnotascrudcrud tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTablecrudcrudnotascrudcrud tr.headercrudcrud, #myTablecrudcrudnotascrudcrud tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+#traenotascrudcrud{
+
+  position: absolute;
+  top:30%;
+  left: 30%;
+
+
+
+}
+
+
+
+#idftraenotascrudcrudcercrudcrud{
+
+  -moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+  box-shadow:inset 0px 1px 0px 0px #f29c93;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+  background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+  background-color:#fe1a00;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #d83526;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+
+
+width: 100px;
+text-align: center;
+padding: 1px;
+margin: auto;
+font-size: 15px;
+position: absolute;
+top: 1%;
+left: 80%;
+
+
+
+
+
+}
+
+
+#ftraenosubenotacrudcrud{
+
+
+  -moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+  box-shadow:inset 0px 1px 0px 0px #f29c93;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+  background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+  background-color:#fe1a00;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #d83526;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+
+
+width: 100px;
+text-align: center;
+padding: 1px;
+margin: auto;
+font-size: 15px;
+position: absolute;
+top: 20%;
+left: 80%;
+
+}
+
+#idmenusubirnotacrudcrud{
+
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 38%;
+  height: 30%;
+  z-index: 2;
+  background-color: #0b0e07;
+  opacity: 0.9;
+
+}
+
+#ediftraenosubenotacrudcrudcrudcrud{
+
+
+
+
+  -moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+  box-shadow:inset 0px 1px 0px 0px #f29c93;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+  background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+  background-color:#fe1a00;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #d83526;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+
+
+width: 70%;
+text-align: center;
+padding: 1px;
+margin: auto;
+font-size: 15px;
+position: absolute;
+top: 20%;
+left: 1%;
+
+
+
+
+
+}
+
+
+#idmenotaxactulizanotasetcrudcrud{
+
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.9;
+  z-index: 80;
+
+}
+
+#ediftraenosubenotacrudcrudcrudcrudsetcecrudcrudcrudcrud{
+
+  -moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+  -webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+  box-shadow:inset 0px -3px 7px 0px #29bbff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+  background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+  background-color:#2dabf9;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  border:1px solid #0b0e07;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  padding:9px 23px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #263666;
+
+
+width: 70%;
+text-align: center;
+padding: 1px;
+margin: auto;
+font-size: 15px;
+position: absolute;
+top: 20%;
+left: 1%;
+
+
+
+}
+
+
+#ftraenosubenotacrudcrudsetcecrudcrud{
+
+  -moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+  -webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+  box-shadow:inset 0px -3px 7px 0px #29bbff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+  background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+  background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+  background-color:#2dabf9;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  border:1px solid #0b0e07;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  padding:9px 23px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #263666;
+
+
+width: 100px;
+text-align: center;
+padding: 1px;
+margin: auto;
+font-size: 15px;
+position: absolute;
+top: 20%;
+left: 80%;
+
+
+
+
+}
+
+
+
+
+#ftraenosubenotacrudcrudsetcecrudcrudcecrudcrud{
+
+  -moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+  box-shadow:inset 0px 1px 0px 0px #f29c93;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+  background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+  background-color:#fe1a00;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #d83526;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+
+
+  width: 100px;
+text-align: center;
+padding: 1px;
+margin: auto;
+font-size: 15px;
+position: absolute;
+top: 10%;
+left: 80%;
+
+
+}
+
+
+
+
+
+
+#idpanelpuedoabrircrudcrud{
+
+position: absolute;
+top: 0%;
+left: 0%;
+background-color: #0688fa;
+width: 100%;
+height: 100%;
+z-index: 43;
+
+
+
+-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+-webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+box-shadow:inset 0px -3px 7px 0px #29bbff;
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+background-color:#2dabf9;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+border:1px solid #0b0e07;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:15px;
+padding:9px 23px;
+text-decoration:none;
+text-shadow:0px 1px 0px #263666;
+
+
+
+
+
+
+
+}
+
+
+
+#idinputpuedoabririnombrecrudcrud{
+
+position: absolute;
+top: 40%;
+left: 45%;
+
+}
+
+
+
+#idinputpuedoabriripasscrudcrud{
+
+position: absolute;
+top: 50%;
+left: 45%;
+
+}
+
+#idinputpuedoabririBTokcrudcrud{
+
+position: absolute;
+top: 69%;
+left: 54%;
+width: 10%;
+
+}
+
+
+#idlabepnombrecrudcrud{
+position: absolute;
+top: 40%;
+left: 40%;
+
+}
+
+#idlabeppasscrudcrud{
+
+position: absolute;
+top: 50%;
+left: 40%;
+}
+
+
+
+.clputpuedoabririnombrecrudcrud{
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+  background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+  background-color:#ffffff;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#666666;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.clputpuedoabririnombrecrudcrud:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+  background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+  background-color:#f6f6f6;
+}
+.clputpuedoabririnombrecrudcrud:active {
+  position:relative;
+  top:1px;
+}
+
+
+
+
+#idtodocrudfull{
+
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+
+}
+
+
+
+
+
+</style>
+
+
+<!--fin  style  crud-->
+
+<script src="jquery-3.3.1.min.js"></script>
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+<div id="idtodocrudfull">
+
+
+
+
+
+    <dic id="idpanelpuedoabrircrudcrud"> <p id="idpabrirpanelcrudcrud"> CRUD USER</p>
+      <label id="idlabepnombrecrudcrud" for="male">User:</label><input class="clputpuedoabririnombrecrudcrud" id="idinputpuedoabririnombrecrudcrud" type="text"  value="" placeholder="user">
+      <label id="idlabeppasscrudcrud" for="male">Pass:</label><input class="clputpuedoabririnombrecrudcrud" id="idinputpuedoabriripasscrudcrud" type="password"  value="" placeholder="pass">
+      <button class="clputpuedoabririnombrecrudcrud" id="idinputpuedoabririBTatrascrudcrud"  onclick="fabrircrudatrasl();" >Atras</button>
+      <button class="clputpuedoabririnombrecrudcrud" id="idinputpuedoabririBTokcrudcrud"  onclick="tousekey();">Ok</button>
+    </dic>
+
+  <div id="idmenotaxactulizanotasetcrudcrud">
+      <input type="text" id="ediftraenosubenotacrudcrudcrudcrudsetcecrudcrudcrudcrud" value="" placeholder="Editar nota">
+
+      <button  onclick="actulizalanotaxfi();" id="ftraenosubenotacrudcrudsetcecrudcrud" class="myButtonbteditcrudcrudsetcrudcrud">editar nota</button>
+      <button  onclick="ftraenosubenotacrudcrudsetcecrudcrudcecrudcrud();" id="ftraenosubenotacrudcrudsetcecrudcrudcecrudcrud" class="myButtonbteditcrudcrudsetcrudcrud">Cancelar</button>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div id="idnotascrudcrud">
+  
+  
+  
+  <div id="idmenusubirnotacrudcrud">
+      <input type="text" id="ediftraenosubenotacrudcrudcrudcrud" value="" placeholder="nueva nota">
+      <button  onclick="ftraenosubenotacrudcrud();" id="ftraenosubenotacrudcrud" class="myButtonbteditcrudcrud">Sube notas</button>
+
+  </div>
+  
+  
+  
+  <button  onclick="ftraenotascrudcrudcer();" id="idftraenotascrudcrudcercrudcrud" class="myButtonbteditcrudcrud">Cerrar</button>
+ 
+
+  <h2 id="idh2crudcrud">Mitabla</h2>
+
+  <input type="text" id="myInputcrudcrudnotascrudcrud" onkeyup="myFunctioncrudcrud()" placeholder="Buscar " title="Type in a name">
+  <table id="myTablecrudcrudnotascrudcrud">
+    <tr class="headercrudcrud">
+        <th style="width:20%;">Quien Escribio</th>
+        <th style="width:70%;">Nota</th>
+        <th style="width:10%;">Fecha</th>
+  
+  
+  
+    </tr>
+  
+  
+  
+  
+    
+  </table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="idmodalmenueditarcrudcrud">
+<p id="idmenueditarpcrudcrud">giovanni rodirguez</p>
+
+
+<button  onclick="ftraenotascrudcrud();" id="traenotascrudcrud" class="myButtonbteditcrudcrud">Notas</button>
+
+<button  onclick="fidbtedisicrudcrud();" id="idbtedisicrudcrud" class="myButtonbteditcrudcrud">Editar</button>
+
+<button  onclick="fidbteliminarcrudcrud();" id="idbteliminarcrudcrud" class="myButtonbteditcrudcrud">Eliminar</button>
+
+<button  onclick="fidbtcerrarsicrudcrud();" id="idbtcerrarsicrudcrud" class="myButtonbteditcrudcrud">cerrar</button>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div id="idpaneleditarpcrudcrud">
+   
+
+
+
+
+        
+
+
+
+        <button id="idbtactaulizaraneleditorcrudcrud"  onclick="traecrudcrudcrud();">actualizar datos</button>
+        
+        
+            <button id="idbtcerraraneleditorcrudcrud"  onclick="fidbtcerraraneleditorcrudcrud();">Cerrar</button>
+        
+        
+            <div id="idcrud1crudcrud">
+        
+        
+        
+              
+        
+        
+        
+         
+              <div class="input7crudcrud">
+              <input type="text" id="input1crudcrud" placeholder="Nombre completo">
+              <label for="input1crudcrud">Nombre</label>
+            
+            
+             
+            <div class="input7crudcrud">
+              <input type="text" id="input2crudcrud" placeholder="Cedula">
+              <label for="input1crudcrud">Cedula</label>
+            </div>
+            
+            
+            <div class="input7crudcrud">
+              <input type="text" id="input3crudcrud" placeholder="Departamento">
+              <label for="input1crudcrud">Departamento</label>
+            </div>
+            
+            <div class="input7crudcrud">
+              <input type="text" id="input4crudcrud" placeholder="Municipio">
+              <label for="input1crudcrud">Municipio</label>
+            </div>
+            
+            
+            <div class="input7crudcrud">
+              <input type="text" id="input5" placeholder="Puesto">
+              <label for="input1crudcrud">Puesto</label>
+            </div>
+            
+            <div class="input7crudcrud">
+              <input type="text" id="input6crudcrud" placeholder="Direccion">
+              <label for="input1crudcrud">Direccion</label>
+            </div>
+            
+            <div class="input7crudcrud">
+              <input type="text" id="input7crudcrud" placeholder="Mesa">
+              <label for="input1crudcrud">Mesa</label>
+            </div>
+ 
+            
+            </div>
+            
+            </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            <div id="idcrud2">
+          
+          
+          
+          
+          
+          
+          
+           
+              <div class="input7crudcrud">
+              <input type="text" id="input8" placeholder="Celular">
+              <label for="input1crudcrud">Celular</label>
+            
+            
+             
+            <div class="input7crudcrud">
+              <input type="text" id="input9crudcrud" placeholder="Email">
+              <label for="input1crudcrud">Email</label>
+            </div>
+            
+            
+            <div class="input7crudcrud">
+              <input type="text" id="input1crudcrud0" placeholder="Facebook">
+              <label for="input1crudcrud">Facebook</label>
+            </div>
+            
+            <div class="input7crudcrud">
+              <input type="text" id="input1crudcrud1" placeholder="Lat">
+              <label for="input1crudcrud">Lat</label>
+            </div>
+            
+            
+            <div class="input7crudcrud">
+              <input type="text" id="input1crudcrud2" placeholder="Lng">
+              <label for="input1crudcrud">Lng</label>
+            </div>
+            
+            <div class="input7crudcrud">
+              <input type="text" id="input1crudcrud3" placeholder="Referido">
+              <label for="input1crudcrud">Referido</label>
+            </div>
+            
+            <div class="input7crudcrud">
+              <input type="text" id="input1crudcrud4" placeholder="Nota de usuario">
+              <label for="input1crudcrud">Nota de usuario</label>
+            </div>
+            
+            <div class="input7crudcrud">
+              <input type="text" id="input1crudcrud5" placeholder="Notal Lider">
+              <label for="input1crudcrud">Notal Lider</label>
+            </div>
+            
+            <div class="input7crudcrud">
+                <input type="text" id="input1crudcrud6" placeholder="Fecha">
+                <label for="input1crudcrud">Fecha</label>
+              </div>
+
+
+
+
+            </div>
+            
+            </div>
+          
+          
+        
+        
+        
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    <button id="idbtopenaneleditorcrudcrud"  onclick="fidbtopenraneleditor();">Editar</button>
+   
+
+
+  <button id="ididbtmenulateralcrudcrud"  onclick="fmenulate();">Menu</button>
+  <button id="idbtatrascrudcrud"  onclick="fidbtatrascrudcrudcrudcrud();">Atras</button>
+  
+  <div id="idmenulateralcrudcrud">
+
+      <button id="idbtliderlcrudcrud"   class="myButtonmenulatcrudcrud"  onclick="fbtlider();">Lider</button>
+
+      <button id="idbtdireccioncrudcrud"   class="myButtonmenulatcrudcrud"  onclick="fidbtdireccioncrudcrud();">Direccion</button>
+      <button id="idbtTelefonocrudcrud"   class="myButtonmenulatcrudcrud"  onclick="fidbtTelefonocrudcrud();">Telefono votante</button>
+
+
+      <button id="idbcedulacrudcrud"   class="myButtonmenulatcrudcrud"  onclick="fidbcedulacrudcrud();">Cedula</button>
+
+      <button id="idbmesacrudcrud"   class="myButtonmenulatcrudcrud"  onclick="fidbmesacrudcrud();">Mesa</button>
+
+
+      <button id="idbnombrcrudcrud"   class="myButtonmenulatcrudcrud"  onclick="fidbnombrcrudcrud();">Nombre</button>
+
+
+      
+      <button id="idbtelelidercrudcrud"   class="myButtonmenulatcrudcrud"  onclick="fidbtelelidercrudcrud();">Telefono del Lider</button>
+      
+
+      <button id="idbpuestcrudcrud"   class="myButtonmenulatcrudcrud"  onclick="fidbpuestcrudcrud();">Puesto</button>
+
+
+  </div>
+
+<h2 id="idh2crudcrud">Ordena Todo por Lider</h2>
+
+<input type="text" id="myInputcrudcrud" onkeyup="myFunctioncrudcrud()" placeholder="Buscar " title="Type in a name">
+
+<table id="myTablecrudcrud">
+  <tr class="headercrudcrud">
+      <th style="width:12.500000000000000%;">Nombre</th>
+      <th style="width:12.500000000000000%;">Cedula</th>
+      <th style="width:12.500000000000000%;">Telefono</th>
+      <th style="width:12.500000000000000%;">Puesto</th>
+      <th style="width:12.500000000000000%;">Direccion</th>
+      <th style="width:12.500000000000000%;">Mesa</th>
+      <th style="width:12.500000000000000%;">Lider</th>
+      <th style="width:12.500000000000000%;">Telefono Lider</th>
+
+
+  </tr>
+
+
+
+
+  
+</table>
+
+
+
+
+
+
+</div>
+
+
+
+
+<script>
+  // Initialize Firebase
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDhOtf_ssOp3KEOiu3nByOWcqJxXZEzVaA",
+    authDomain: "concejalaginna.firebaseapp.com",
+    databaseURL: "https://concejalaginna.firebaseio.com",
+    projectId: "concejalaginna",
+    storageBucket: "concejalaginna.appspot.com",
+    messagingSenderId: "167282227815"
+  };
+  firebase.initializeApp(config);
+</script>
+<script>
+function escribeh2(st){
+
+  document.getElementById("idh2crudcrud").innerHTML=st;
+}
+
+
+function fbtlider(){
+posicionid=6;
+escribeh2("Buscando por Lider");
+}
+
+function fidbtdireccioncrudcrud(){
+
+posicionid=4;
+escribeh2("Buscando por Direccion");
+}
+
+function fidbtTelefonocrudcrud(){
+
+posicionid=2;
+escribeh2("Buscando por Telefono del Votante");
+}
+
+function fidbcedulacrudcrud(){
+
+posicionid=1;
+
+escribeh2("Buscando por Cedula");
+}
+
+function fidbmesacrudcrud(){
+
+posicionid=5;
+escribeh2("Buscando por Mesa");
+}
+function fidbnombrcrudcrud(){
+  escribeh2("Buscando por Nombre del Votante");
+posicionid=0;
+}
+
+function fidbtelelidercrudcrud(){
+  escribeh2("Buscando por Telefono del Lider");
+posicionid=7;
+}
+
+
+function fidbpuestcrudcrud(){
+  escribeh2("Buscando por Puesto");
+posicionid=3;
+}
+
+var todovotantest={ant:0,des:0,ahora:0};
+var  arraypuestoodercrudcrud=[];
+var arraytodoordenode=[];
+  /*firebase.database().ref("votantes").orderByChild("puesto").on("child_added", function(snapshot) {
+  console.log(snapshot.val());
+  });*/
+var idxcrudcrudllamtodotodo=0;
+var vllegueunsaves=0;
+function traetodoordenadopor(st1){
+  firebase.database().ref("votantes").orderByChild(String(st1)).on("child_added", function(snapshot) {
+ // console.log(snapshot.val());
+  //todovotantest=snapshot.val();
+  arraytodoordenode.push({obj:snapshot.val(),key:snapshot.key});
+  console.log( arraytodoordenode[arraytodoordenode.length-1]);
+ // elforordenatodopornodo();
+// creatd();
+todovotantest.ant=todovotantest.ahora;
+todovotantest.ahora=todovotantest.ahora+1;
+todovotantest.des=todovotantest.ahora;
+
+
+
+
+
+
+  });
+
+
+}
+setInterval(function(){ 
+
+if(arraytodoordenode.length==todovotantest.des){
+  setTimeout(function(){
+    todovotantest.des=0;
+    elforordenatodopornodo();
+    creatd();
+  },2000)
+  }
+
+ }, 3000);
+
+function elforordenatodopornodo(){
+
+for(var i in arraytodoordenode){
+    
+
+  arraypuestoodercrudcrud.push({cedula:arraytodoordenode[i].obj.cedula,departamento:arraytodoordenode[i].departamento,
+    direccion:arraytodoordenode[i].obj.direccion,
+email:arraytodoordenode[i].obj.email,
+facebook:arraytodoordenode[i].obj.facebook,
+fecha:arraytodoordenode[i].obj.fecha,
+idreferido:arraytodoordenode[i].obj.idreferido,
+mesa:arraytodoordenode[i].obj.mesa,
+movil:arraytodoordenode[i].obj.movil,
+municipio:arraytodoordenode[i].obj.municipio ,
+notareferido:arraytodoordenode[i].obj.notareferido,
+nombres:arraytodoordenode[i].obj.nombre ,
+notauser:arraytodoordenode[i].obj.notauser,
+referido:arraytodoordenode[i].obj.referido,
+puesto:arraytodoordenode[i].obj.puesto,idmio:arraytodoordenode[i].key
+ 
+  
+  });
+
+    
+
+  }
+}
+
+
+
+
+
+
+
+var todovotantes;
+var vordenarpuesto="eeee";
+var vertraetodo=0;
+
+
+
+
+
+
+
+
+
+
+
+function elforfirepuesto(){
+  for(var i in todovotantes){
+
+    
+      if(todovotantes[i].puesto==vordenarpuesto){
+  
+
+        arraypuestoodercrudcrud.push({cedula:todovotantes[i].cedula,departamento:todovotantes[i].departamento,
+          direccion:todovotantes[i].direccion,
+    email:todovotantes[i].email,
+    facebook:todovotantes[i].facebook,
+    fecha:todovotantes[i].fecha,
+    idreferido:todovotantes[i].idreferido,
+    mesa:todovotantes[i].mesa,
+    movil:todovotantes[i].movil,
+    municipio:todovotantes[i].municipio ,
+    notareferido:todovotantes[i].notareferido,
+    nombres:todovotantes[i].nombre ,
+    notauser:todovotantes[i].notauser,
+    referido:todovotantes[i].referido,
+    puesto:todovotantes[i].puesto,idmio:i
+   
+    
+    });
+ 
+      }
+
+    }
+}
+var sttraetodoordevotantepor="";
+function traerdef(stnode){ 
+  firebase.database().ref().child(String(stnode)).once("value", function(snapshot) { 
+    //console.log(snapshot.key + " was " + snapshot.val()+ " meters tall");
+todovotantes=snapshot.val();
+creatd();
+
+  
+  });
+
+}
+
+vertraetodo=0;
+iniciauno();
+function iniciauno(){
+  if(vertraetodo==1){vordenarpuesto="";traerdef("votantes");  elforfirepuesto();}
+  if(vertraetodo==0){ sttraetodoordevotantepor="referido";traetodoordenadopor(sttraetodoordevotantepor);}
+  
+   
+}
+
+
+
+/*
+var st={  
+  cedula:todovotantes[i].cedula,departamento:todovotantes[i].departamento,direccion:todovotantes[i].direccion,email:todovotantes[i].email,facebook:todovotantes[i].facebook,
+​fechainsc:todovotantes[i].fechainsc,idreferido:todovotantes[i].idreferido,mesa:todovotantes[i].mesa,movil:todovotantes[i].movil,municipio:todovotantes[i].municipio,
+​nombre:todovotantes[i].nombre,notareferido:todovotantes[i].notareferido,notauser:todovotantes[i].notauser,puesto:todovotantes[i].puesto,​referido:todovotantes[i].referido
+ }
+
+*/
+var idxcrudcrudscrudcrud=0;
+
+  varstestructuratdcrudcrudcrudcrud="<tr ><td id="+String(idxcrudcrud)+" class='cltd'>Nombre:<br>"+String("Giovanni ernesto rodigues diaz") +"</td><td class='cltd'>Cedula:<br>"+String(111111111111)+"</td>"+
+    " <td class='cltd'>Telefono:<br>"+String(3134567898)+"</td>"+
+   "  <td class='cltd'>Puesto:<br>"+String("casdfrewsdfgvddsdsdsdd")+"</td>"+
+     "<td class='cltd'>Direccion:<br>"+String("cal le 34 No 43 b - 12")+"</td>"+
+    " <td class='cltd'>Mesa:<br>"+String(32)+"</td>"+
+    " <td class='cltd'>Referido:<br>"+String("Giovanni ernesto rodigues diaz")+"</td>"+
+    " <td class='cltd'>"+String("Telefono Lider")+"<br>3123456789</td></tr>";
+
+
+
+
+
+
+
+var posicionid=0;
+function myFunctioncrudcrud() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInputcrudcrud");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTablecrudcrud");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[posicionid];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var idxcrudcrud=0;
+
+
+function creatd(){
+
+  if(vllegueunsaves>0){
+location.reload();
+alert(vllegueunsaves);
+  }
+vllegueunsaves=vllegueunsaves+1;
+
+
+  var stestructuratdcrudcrud="";
+
+
+  for(var i  in arraypuestoodercrudcrud){
+
+    stestructuratdcrudcrud="<tr ><td onclick="+'edit(this);'+"    id="+String(arraypuestoodercrudcrud[i].idmio) +" class='cltd'>Nombre:<br>"+String(arraypuestoodercrudcrud[i].nombres)+" : "+String(idxcrudcrud)+ +"</td>"+
+"<td class='cltd'>Cedula:<br>"+String(arraypuestoodercrudcrud[i].cedula)+"</td>"+
+  " <td class='cltd'>Telefono:<br>"+String(arraypuestoodercrudcrud[i].movil)+"</td>"+
+ "  <td class='cltd'>Puesto:<br>"+String(arraypuestoodercrudcrud[i].puesto)+"</td>"+
+   "<td class='cltd'>Direccion:<br>"+String(arraypuestoodercrudcrud[i].direccion)+"</td>"+
+  " <td class='cltd'>Mesa:<br>"+String(arraypuestoodercrudcrud[i].mesa)+"</td>"+
+  " <td class='cltd'>Lider:<br>"+String(arraypuestoodercrudcrud[i].referido)+"</td>"+
+  " <td class='cltd'>"+String("Telefono Lider")+"<br>"+String(arraypuestoodercrudcrud[i].movil)+"</td></tr>";
+
+
+console.log(arraypuestoodercrudcrud[i].puesto);
+
+idxcrudcrud=idxcrudcrud+1;
+$("#myTablecrudcrud").append(stestructuratdcrudcrud);
+
+$('#'+String(idxcrudcrud)).click(function(){
+//alert($(this).attr('id'));
+  })
+
+
+}/*
+
+  for(var i=0;i<4;i=i+1){
+
+//megusta:general[itera].likes
+
+
+stestructuratdcrudcrud="<tr ><td onclick="+'yocelda(this);'+"id="+String(idxcrudcrud)+" class='cltd'>Nombre:<br>"+String("Giovanni ernesto rodigues diaz")+" : "+String(idxcrudcrud)+ +"</td>"+
+"<td class='cltd'>Cedula:<br>"+String(111111111111)+"</td>"+
+  " <td class='cltd'>Telefono:<br>"+String(3134567898)+"</td>"+
+ "  <td class='cltd'>Puesto:<br>"+String("casdfrewsdfgvddsdsdsdd")+"</td>"+
+   "<td class='cltd'>Direccion:<br>"+String("cal le 34 No 43 b - 12")+"</td>"+
+  " <td class='cltd'>Mesa:<br>"+String(32)+"</td>"+
+  " <td class='cltd'>Referido:<br>"+String("Giovanni ernesto rodigues diaz")+"</td>"+
+  " <td class='cltd'>"+String("Telefono Lider")+"<br>"+String(3123456789)+"</td></tr>";
+
+//general[itera].likes
+
+idxcrudcrud=idxcrudcrud+1;
+$("#myTablecrudcrud").append(stestructuratdcrudcrud);
+
+
+
+
+
+
+
+}
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+}
+
+var bollactivaredicion=false;
+var idxcrudcrudbollactivaredicion=1;
+var idvotantecrud="";
+function edit(yo){
+
+  if(bollactivaredicion){ idvotantecrud=yo.id ; 
+
+  if(idvotantecrud==""){
+    document.getElementById("idmenueditarpcrudcrud").innerHTML=  yo.innerHTML+" sin id  "+idvotantecrud;
+
+  }
+
+  else{document.getElementById("idmodalmenueditarcrudcrud").style.display="block";
+ // document.getElementById("idmenueditarpcrudcrud").innerHTML=  yo.innerHTML+""+idvotantecrud;
+ document.getElementById("idmenueditarpcrudcrud").innerHTML= "Menu CRUD";
+  }
+  }
+else{
+  document.getElementById("idmodalmenueditarcrudcrud").style.display="none";
+}
+ 
+
+
+  
+
+
+
+}
+
+
+
+function elimarvotante(st){
+
+  firebase.database().ref("votantes").child(String(st)).remove();
+}
+
+
+
+
+
+
+var idxcrudcrudmenulateraloculta=1;
+document.getElementById("idmenulateralcrudcrud").style.display="none";
+function fmenulate(){
+if(idxcrudcrudmenulateraloculta==1){
+  document.getElementById("idmenulateralcrudcrud").style.display="block"
+  document.getElementById("idmenulateralcrudcrud").style.width=String(window.innerWidth*0.4)+"px";}
+ else{ document.getElementById("idmenulateralcrudcrud").style.display="none";}idxcrudcrudmenulateraloculta=1+idxcrudcrudmenulateraloculta;
+if(idxcrudcrudmenulateraloculta>1){idxcrudcrudmenulateraloculta=0;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+function fidbtatrascrudcrudcrudcrud(){
+
+  window.location="index2.html";
+}
+
+
+
+function fidbtcerraraneleditorcrudcrud(){
+
+//document.getElementById("idpaneleditarpcrudcrud").style.display="none";
+
+document.getElementById("idpaneleditarpcrudcrud").style.display="none";
+
+}
+
+
+var idbooleditarpanel=0;
+function fidbtopenraneleditor(){
+  if(idxcrudcrudbollactivaredicion==1){
+
+bollactivaredicion=true;
+
+document.getElementById("idbtopenaneleditorcrudcrud").style.backgroundColor="#2dabf9";
+
+}else{ bollactivaredicion=false;
+  document.getElementById("idbtopenaneleditorcrudcrud").style.backgroundColor="#000000";
+  bollactivaredicion=false;
+}
+
+if(idxcrudcrudbollactivaredicion>1){idxcrudcrudbollactivaredicion=0;}
+
+idxcrudcrudbollactivaredicion=idxcrudcrudbollactivaredicion+1;
+
+//document.getElementById("idpaneleditarpcrudcrud").style.display="block";
+}
+
+
+document.getElementById("idpaneleditarpcrudcrud").style.display="none";
+
+function fidbtcerrarsicrudcrud(){
+  document.getElementById("idmodalmenueditarcrudcrud").style.display="none";
+
+}
+
+function fidbteliminarcrudcrud(){
+  if(idvotantecrud==""){}
+  else{elimarvotante(idvotantecrud);
+    alert("deletee");
+  window.location.reload();
+
+    firebase.database().ref("votantes").on("child_removed", function(snapshot) {
+  var deletedPost = snapshot.val();
+  console.log("The blog post titled '" + deletedPost.title + "' has been deleted");
+
+if(idvotantecrud==deletedPost){
+alert("deletee");
+}
+else{
+  alert("no deletee");
+}
+
+alert("deletee");
+
+});
+  
+  }
+  
+
+}
+document.getElementById("idmodalmenueditarcrudcrud").style.display="none";
+
+function fidbtedisicrudcrud(){
+  //alert(idvotantecrud);
+ 
+  document.getElementById("idpaneleditarpcrudcrud").style.display="block";
+  document.getElementById("idmodalmenueditarcrudcrud").style.display="none";
+
+
+  mia();
+
+}
+
+var arrcrudvotant;
+function traecrudcrudcrud2(){
+/*
+  firebase.database().ref("votantes").child(String(idvotantecrud).once("value", function(snapshot) {
+    arrcrudvotant = snapshot.val();
+    document.getElementById("idpaneleditarpcrudcrud").style.display="block";
+    escribeenediedi();
+});*/
+  
+}
+
+function traecrudcrudcrud(){ alert("traecru");
+document.getElementById("idpaneleditarpcrudcrud").style.display="block";
+
+/*
+  if(idvotantecrud!=""){
+  firebase.database().ref("votantes").child(String(idvotantecrud)).on("value", function(snapshot) {
+    arrcrudvotant = snapshot.val();
+    document.getElementById("idpaneleditarpcrudcrud").style.display="block";
+    escribeenediedi();
+    console.log(arrcrudvotant);
+
+}, function (errorObject) {
+
+});}*/
+}
+function mia(){
+
+  if(idvotantecrud!=""){
+  firebase.database().ref("votantes").child(String(idvotantecrud)).on("value", function(snapshot) {
+    arrcrudvotant = snapshot.val();
+    document.getElementById("idpaneleditarpcrudcrud").style.display="block";
+    escribeenediedi();
+    console.log(arrcrudvotant);
+
+
+}, function (errorObject) {
+
+});}
+}
+
+
+
+function setvok(st1){
+
+  document.getElementById(st1).value="";
+}
+
+
+
+
+
+
+
+var ednombre="";
+var edcedula="";
+var eddepartamento="";
+var eddireccion="";
+var edemail="";
+var edfacebook="";
+var edidreferido="";
+var edlat="";
+var edlng="";
+var edmesa="";
+var edmovil="";
+var edmunicipio="";
+var ednotareferido="";
+var ednotauser="";
+var edpuesto="";
+var edreferido="";
+var edfechainsc="";
+
+var  edpersona=[];
+
+function edsubeperso(){
+
+  edpersona.push({
+  cedula: edcedula,
+  departamento: eddepartamento,
+  direccion: eddireccion,
+  email: edemail,
+  facebook: edfacebook,
+  fechainsc:edfechainsc,
+  idreferido:edidreferido,
+  lat: edlat,
+  lng: edlng,
+  mesa: edmesa,
+movil: edmovil,
+  municipio:edmunicipio,
+  nombre: ednombre,
+  notareferido: ednotareferido,
+  notauser: ednotauser,
+  puesto:edpuesto,
+referido: edreferido
+}
+);
+}
+function escribeenediedi(){
+
+
+
+  for(var i in  arrcrudvotant){
+    ednombre= arrcrudvotant.nombre;
+    edcedula=arrcrudvotant.cedula;
+    eddepartamento=arrcrudvotant.departamento;
+    eddireccion=arrcrudvotant.direccion;
+   edemail =arrcrudvotant.email;
+  edfacebook=arrcrudvotant.facebook;
+  edidreferido=arrcrudvotant.idreferido;
+  edlat=arrcrudvotant.lat;
+  edlng=arrcrudvotant.lng;
+  edmesa=arrcrudvotant.mesa;
+  edmovil=arrcrudvotant.movil;
+  edmunicipio=arrcrudvotant.municipio;
+  ednotareferido=arrcrudvotant.notareferido;
+  ednotauser=arrcrudvotant.notauser;
+  edpuesto=arrcrudvotant.puesto;
+  edreferido=arrcrudvotant.referido;
+  edfechainsc=arrcrudvotant.fechainsc;
+
+  // console.log(" nm " +ednombre);
+  }
+  setv("input1crudcrud",ednombre);
+  setv("input2crudcrud",edcedula);
+  setv("input3crudcrud",eddepartamento);
+  setv("input6crudcrud",eddireccion);
+  setv("input9crudcrud",edemail);
+  setv("input6crudcrud",edidreferido);
+  setv("input1crudcrud1",edlat);
+  setv("input1crudcrud2",edlng);
+  setv("input7crudcrud",edmesa);
+  setv("input8",edmovil);
+  setv("input4crudcrud",edmunicipio);
+  setv("input1crudcrud5",ednotareferido);
+  setv("input1crudcrud4",ednotauser);
+ 
+  setv("input1crudcrud3",edreferido);
+  setv("input1crudcrud6",edfechainsc);
+  setv("input5",edpuesto);
+
+  setv("input1crudcrud0",edfacebook);
+  
+}
+
+function setv(st1,st2){
+
+  document.getElementById(st1).value=st2;
+}
+
+function getved(st1,st2){
+
+return document.getElementById(st1).value;
+}
+
+
+function gettodoedi(){
+  ednombre= getved("input1crudcrud",ednombre);
+  edcedula= getved("input2crudcrud",edcedula);
+  eddepartamento= getved("input3crudcrud",eddepartamento);
+  eddireccion= getved("input6crudcrud",eddireccion);
+  edemail=getved("input9crudcrud",edemail);
+  edidreferido=getved("input6crudcrud",edidreferido);
+  edlat= getved("input1crudcrud1",edlat);
+  edlng=getved("input1crudcrud2",edlng);
+  edmesa=getved("input7crudcrud",edmesa);
+  edmovil=getved("input8",edmovil);
+  edmunicipio=getved("input4crudcrud",edmunicipio);
+  ednotareferido= getved("input1crudcrud5",ednotareferido);
+  //ednotauser=addEventListener("input1crudcrud4",ednotauser);
+ 
+
+  ednotauser=getved("input1crudcrud4",ednotauser);
+  edreferido=getved("input1crudcrud3",edreferido);
+  edfechainsc=getved("input1crudcrud6",edfechainsc);
+  edpuesto= getved("input5",edpuesto);
+
+  edfacebook=getved("input1crudcrud0",edfacebook);
+}
+
+
+
+function traecrudcrudcrud(){
+  gettodoedi();
+  
+ // edsubeperso();
+
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("cedula").set(edcedula);  
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("departamento").set(eddepartamento); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("direccion").set(eddireccion); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("email").set(edemail); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("facebook").set(edfacebook); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("fechainsc").set(edfechainsc); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("idreferido").set(edidreferido); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("lat").set(edlat); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("lng").set(edlng); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("mesa").set(edmesa); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("movil").set(edmovil); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("municipio").set(edmunicipio); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("nombre").set(ednombre); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("notareferido").set( ednotareferido); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("notauser").set( ednotauser); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("puesto").set(edpuesto); 
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("referido").set( edreferido); 
+ //firebase.database().ref("votantes").child(String(idvotantecrud)).set(edpersona);  
+ //console.log(edpersona); 
+}
+
+
+
+
+
+
+
+
+
+
+// todo d e notas
+
+
+
+
+
+
+var nuevanota="";
+function subenotas(){traefechaspc();
+
+nuevanota=document.getElementById("ediftraenosubenotacrudcrudcrudcrud").value;
+
+
+  firebase.database().ref("votantes").child(String(idvotantecrud)).child("notasx").push({keyuser:String(vkeyuser),quienescri:String(nombreusermodificador),nota:String(nuevanota),lafecha:String(today)+"  "+String(time)});
+
+
+
+  window.location.reload();
+
+}
+
+
+var arrcrudvotantnotas=[];
+
+function ftraenotascrudcrud(){
+
+if(idvotantecrud!=""){
+firebase.database().ref("votantes").child(String(idvotantecrud)).child("notasx").once("value", function(snapshot) {
+  arrcrudvotantnotas = snapshot.val();
+  //ftraenotascrudcrudope();
+ // escribeenediedi();
+ ftraenotascrudcrudope();
+ creatnotas();
+ 
+  
+
+}, function (errorObject) {
+
+});}
+}
+
+ftraenotascrudcrudcer();
+function ftraenotascrudcrudcer(){
+  document.getElementById("idnotascrudcrud").style.display="none";
+
+  
+}
+function ftraenotascrudcrudope(){
+  document.getElementById("idnotascrudcrud").style.display="block";
+
+  
+}
+
+
+function ftraenosubenotacrudcrud(){
+  subenotas();
+
+}
+var now;
+  var today ;
+  var time;
+  var hours;
+  var minutes;
+  var seconds;
+  var milliseconds;
+  var newSeconds;
+
+function traefechaspc(){
+  now = new Date();
+  today = now.toDateString();
+ time = now.toLocaleTimeString();
+ hours = now.getHours();
+ minutes = now.getMinutes();
+  seconds = now.getSeconds();
+  milliseconds = now.getMilliseconds();
+ newSeconds = seconds+ (milliseconds/1000);
+}
+
+
+
+
+function ordenanotas() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInputcrudcrud");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTablecrudcrud");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[posicionid];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+var idxcrudcrudn=0;
+var stestructuratdcrudcrudnota="";
+function creatnotas(){
+
+var stestructuratdcrudcrud="";
+
+ idxcrudcrudn=0;
+
+
+
+
+
+
+
+for(var i  in arrcrudvotantnotas){
+
+  stestructuratdcrudcrudnota="<tr ><td onclick="+'editnotax(this);'+"    id="+String(i) +" class='cltd'>Nombre:<br>"+String(arrcrudvotantnotas[i].quienescri)+" : "+String(idxcrudcrudn)+ +"</td>"+
+"<td class='cltd'>Nota:<br>"+String(arrcrudvotantnotas[i].nota)+"</td>"+
+" <td class='cltd'>Fecha:<br>"+String(arrcrudvotantnotas[i].lafecha)+"</td>"
+
+;
+
+
+
+
+idxcrudcrudn=idxcrudcrudn+1;
+$("#myTablecrudcrudnotascrudcrud").append(stestructuratdcrudcrudnota);
+
+$('#'+String(idxcrudcrudn)).click(function(){
+//alert($(this).attr('id'));
+})
+
+
+}
+
+
+
+
+
+
+}
+
+
+var guardoidnotascrudcrudx="";
+var  notaaset="";
+function editnotax(thisyo){
+ alert(thisyo.id);
+ guardoidnotascrudcrudx=thisyo.id;
+ ftraenosubenotacrudcrudsetcecrudcrudop();
+}
+
+
+ftraenosubenotacrudcrudsetcecrudcrudcecrudcrud();
+function ftraenosubenotacrudcrudsetcecrudcrudcecrudcrud(){
+
+  document.getElementById("idmenotaxactulizanotasetcrudcrud").style.display="none";
+}
+function ftraenosubenotacrudcrudsetcecrudcrudop(){
+
+document.getElementById("idmenotaxactulizanotasetcrudcrud").style.display="block";
+}
+function actulizalanotaxfi(){
+  notaaset=document.getElementById("ediftraenosubenotacrudcrudcrudcrudsetcecrudcrudcrudcrud").value;
+
+ /*firebase.database().ref("votantes").child(String("-LZkidIOsGIiWfhHsepQ")).child("notasx").
+ child(String("n1")).child("nota").set(String(notaaset));*/
+
+ firebase.database().ref("votantes").child(String(idvotantecrud)).child("notasx").child(String(guardoidnotascrudcrudx)).child("nota").set(String(notaaset));
+
+window.location.reload();
+}
+
+
+
+
+function traeuser(){}
+
+var userf=[];
+
+
+function ftrusersi(){
+
+userf=[];
+firebase.database().ref().child(String("user")).once("value", function(snapshot) {
+  userf= snapshot.val();
+
+
+
+}, function (errorObject) {
+
+});
+}
+var soyadmiminuser=false;
+var elusermodifica="";
+var elclavemodifica="";
+var vkeyuser="";
+var  nombreusermodificador="";
+function tousekey(){
+
+alert("giovanni");
+
+elusermodifica=document.getElementById("idinputpuedoabririnombrecrudcrud").value;
+
+elclavemodifica=document.getElementById("idinputpuedoabriripasscrudcrud").value;
+
+  for(var i in userf){
+
+if(elclavemodifica==userf[i].clave&&userf[i].user==elusermodifica){
+  vkeyuser=i;
+  soyadmiminuser=true;
+  nombreusermodificador=userf[i].nombre;
+}
+
+if(soyadmiminuser){
+  soyadmiminuser=false;
+  fidpanelpuedoabrircrudcrud();
+}
+
+  }
+}
+
+function fidpanelpuedoabrircrudcrud(){
+
+document.getElementById("idpanelpuedoabrircrudcrud").style.display="none";
+}
+function fcidpanelpuedoabrircrudcrud(){
+
+document.getElementById("idpanelpuedoabrircrudcrud").style.display="block";
+}
+
+
+
+
+
+function fabrircrudatrasl(){
+  fidbtatrascrudcrudcrudcrud();
+}
+
+
+
+
+ftrusersi();
+
+document.getElementById("idpanelpuedoabrircrudcrud").style.display="none";
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
